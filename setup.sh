@@ -1,0 +1,1 @@
+cp ./manifest.json ./dist/manifest.json
