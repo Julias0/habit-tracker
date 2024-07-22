@@ -1,0 +1,84 @@
+$red: #ff9999;
+$blue: #99ccff;
+$green: #99ff99;
+$orange: #ffcc99;
+$yellow: #fff599; // light yellow
+$purple: #cc99ff; // light purple
+$teal: #99ffff; // light teal
+$pink: #ff99cc; // light pink
+$lime: #ccff99; // light lime
+$peach: #ffc299; // light peach
+$lavender: #e6e6fa; // lavender
+$skyBlue: #87ceeb; // sky blue
+$mint: #98ff98; // mint green
+$coral: #ff7f50; // coral
+$gold: #ffd700; // gold
+
+.habit-group-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.habit-group {
+  display: flex;
+  margin: 4px;
+  min-width: 120px;
+  max-width: 120px;
+  min-height: 120px;
+  max-height: 120px;
+  flex-wrap: wrap;
+
+  .habit {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    border: 1px solid black;
+
+    &.habit-1 {
+      &.active {
+        background-color: $red; // light red
+      }
+    }
+
+    &.habit-2 {
+      &.active {
+        background-color: $blue; // light blue
+      }
+    }
+
+    &.habit-3 {
+      &.active {
+        background-color: $green; // light green
+      }
+    }
+
+    &.habit-4 {
+      &.active {
+        background-color: $orange; // light orange
+      }
+    }
+  }
+}
+
+.day-number {
+  position: relative;
+  top: -81px;
+  left: 33px;
+  background-color: $yellow;
+  padding: 12px 0;
+  border-radius: 50%;
+  max-width: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  text-align: center;
+  &.active {
+    background-color: $coral;
+  }
+}
